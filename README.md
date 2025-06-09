@@ -18,11 +18,11 @@ AI Image Cutout 是一个基于 React 的开源项目，使用 u2net.onnx 模型
 http://aicut.online
 
 # ⚙️ 安装与运行
-前置要求\
+前置要求
 
 ```
-Node.js 18+\
-pnpm 8+\
+Node.js 18+
+pnpm 8+
 现代浏览器（推荐 Chrome 或 Edge）
 ```
 
