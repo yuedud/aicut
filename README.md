@@ -1,72 +1,47 @@
-# Getting Started with Create React App
+AI Image Cutout - 浏览器端智能抠图工具
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AI Image Cutout 是一个基于 React 的开源项目，使用 u2net.onnx 模型和 onnxruntime-web 在浏览器中实现本地运行的智能图像抠图功能。无需服务器支持，所有图像处理均在用户设备上完成，保护用户隐私。
 
-## Available Scripts
+✨ 核心特性
+纯前端实现 - 所有计算在浏览器中完成，无需后端服务器
 
-In the project directory, you can run:
+实时抠图处理 - 使用 WebAssembly 加速 ONNX 模型推理
 
-### `npm start`
+隐私保护 - 用户图像永不离开本地设备
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+高质量结果 - 基于 u2net 深度学习模型的专业级抠图效果
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+轻量级 - 优化模型加载，快速启动应用
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🚀 在线体验
+http://aicut.online
 
-### `npm run build`
+⚙️ 安装与运行
+前置要求\
+Node.js 18+\
+pnpm 8+\
+现代浏览器（推荐 Chrome 或 Edge）
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+安装步骤
+```
+bash
+# 克隆仓库
+git clone https://github.com/yuedud/aicut.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 安装依赖
+`npm install`
+# 或使用 yarn
+`yarn install`
+# 或使用pnpm
+`pnpm install`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 启动开发服务器
+`npm start`
+# 或使用 yarn
+`yarn start`
+# 或使用pnpm
+`pnpm start`
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# ai-cut
-# aicut
+应用将在 http://localhost:3000 启动
